@@ -1,11 +1,11 @@
 import Image from "next/image";
-import stinCatJpg from "./stin_cat.jpg";
+import stinCatJpg from "../stin_cat.jpg";
 
 export default function Home() {
   return (
     <main className="space-y-32">
-      <a className="text-blue-500 underline" href="/page2">
-        page2に移動
+      <a className="text-blue-500 underline" href="/">
+        TOPに移動
       </a>
       <div>
         <p className="text-lg font-bold">next/image, モジュール読み込み</p>
@@ -29,7 +29,7 @@ export default function Home() {
         </p>
         <Image
           className="max-w-64"
-          src="https://placehold.jp/150x150.png"
+          src="https://via.placeholder.com/200x200"
           alt="placeholder"
           width="300"
           height="300"
@@ -48,3 +48,5 @@ export default function Home() {
     </main>
   );
 }
+
+export const dynamic = "force-dynamic";
