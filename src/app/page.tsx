@@ -36,11 +36,33 @@ export default function Home() {
         />
       </div>
       <div className="mt-32">
+        <p className="text-lg font-bold">
+          next/image, 文字列読み込み, next/og画像
+        </p>
+        <Image
+          className="max-w-64"
+          src="/next-og-image?text=STIN_CAT NAMAIKI"
+          alt="STIN_CAT NAMAIKI"
+          width="1200"
+          height="630"
+        />
+      </div>
+      <div className="mt-32">
         <p className="text-lg font-bold">img, 文字列読み込み, 内部画像</p>
         <img
           className="max-w-64"
           src="/stin_cat.jpg"
           alt="stin cat"
+          width="300"
+          height="300"
+        />
+      </div>
+      <div className="mt-32">
+        <p className="text-lg font-bold">img, 文字列読み込み, next/og画像</p>
+        <img
+          className="max-w-64"
+          src="/next-og-image?text=STIN_CAT KAWAII"
+          alt="STIN_CAT KAWAII"
           width="300"
           height="300"
         />
